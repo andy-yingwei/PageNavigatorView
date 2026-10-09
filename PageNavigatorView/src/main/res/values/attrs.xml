@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- =========================================================
+         Toast Gravity 枚举
+         ========================================================= -->
+    <attr name="pic_toastGravityEnum" format="enum">
+        <enum name="top" value="48" />        <!-- Gravity.TOP -->
+        <enum name="center" value="17" />     <!-- Gravity.CENTER -->
+        <enum name="bottom" value="80" />     <!-- Gravity.BOTTOM -->
+    </attr>
+
+    <!-- =========================================================
+         PageIndicatorConfig 对应自定义属性
+         严格对齐 PageIndicatorConfig.java 字段
+         ========================================================= -->
+
+    <declare-styleable name="PageIndicatorView">
+
+        <!-- ====================================================
+             区域一：page_control_bar.xml
+             ==================================================== -->
+
+        <!-- mainLayout -->
+        <attr name="pic_barBackgroundColor" format="color" />
+        <attr name="pic_barHeightDp" format="integer" />
+        <attr name="pic_barStrokeColor" format="color" />
+        <attr name="pic_barStrokeWidthDp" format="integer" />
+
+        <!-- 控制栏公共 -->
+        <attr name="pic_barTextSizeSp" format="integer" />
+        <attr name="pic_barIconSizeDp" format="integer" />
+        <attr name="pic_barEnableColor" format="color" />
+        <attr name="pic_barDisableColor" format="color" />
+
+        <!-- btnPrev -->
+        <attr name="pic_prevText" format="string" />
+        <attr name="pic_prevIconRes" format="reference" />
+
+        <!-- btnNext -->
+        <attr name="pic_nextText" format="string" />
+        <attr name="pic_nextIconRes" format="reference" />
+
+        <!-- btnPageIndicator -->
+        <attr name="pic_indicatorTextColor" format="color" />
+        <attr name="pic_indicatorTextSizeSp" format="integer" />
+
+        <!-- ====================================================
+             区域二：popup_jump_page.xml
+             ==================================================== -->
+
+        <attr name="pic_popupBackgroundColor" format="color" />
+
+        <attr name="pic_inputTextColor" format="color" />
+        <attr name="pic_inputTextSizeSp" format="integer" />
+        <attr name="pic_inputHintColor" format="color" />
+
+        <attr name="pic_confirmText" format="string" />
+        <attr name="pic_confirmTextColor" format="color" />
+        <attr name="pic_confirmTextSizeSp" format="integer" />
+        <attr name="pic_confirmBackgroundColor" format="color" />
+        <attr name="pic_errorTipTextColor" format="color" />
+        <attr name="pic_errorTipTextSizeSp" format="integer" />
+
+        <attr name="pic_popupPaddingDp" format="integer" />
+    </declare-styleable>
+
+</resources>

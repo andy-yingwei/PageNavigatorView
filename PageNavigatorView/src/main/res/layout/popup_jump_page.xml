@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@android:color/white">
+
+    <!-- 输入区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/edittext_outline"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/di_text"
+            android:textSize="14sp"
+            android:textColor="#FF666666" />
+
+        <EditText
+            android:id="@+id/etJumpPage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:maxLength="4"
+            android:gravity="center"
+            android:textColor="#FF000000"
+            android:textSize="16sp"
+            android:background="@null"
+            android:hint="@string/jump_page_hint"
+            android:textColorHint="#FF888888"
+            android:textCursorDrawable="@drawable/edittext_cursor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ye_text"
+            android:textSize="14sp"
+            android:textColor="#FF666666" />
+
+    </LinearLayout>
+
+    <!-- 错误提示（默认隐藏） -->
+    <TextView
+        android:id="@+id/tvErrorTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textColor="#D50000"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirm"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/confirm_text"
+        android:textSize="16sp"
+        android:background="@drawable/btn_confirm_bg" />
+</LinearLayout>

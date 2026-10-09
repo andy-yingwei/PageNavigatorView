@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyPageNavigatorView</string>
+    <string name="left_button_text">上一页</string>
+    <string name="right_button_text">下一页</string>
+    <string name="page_indicator_text">1 / 10</string>
+    <string name="jump_page_text">请输入页码</string>
+    <string name="confirm_text">确认跳转</string>
+    <string name="page_indicator_format">当前%1$d页 / 总共%2$d页</string>
+    <string name="di_text">第</string>
+    <string name="ye_text">页</string>
+    <string name="jump_page_hint">请输入页码</string>
+</resources>
